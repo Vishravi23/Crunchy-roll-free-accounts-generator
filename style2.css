@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://wallpaperaccess.com/full/9508747.png');
+    background-size: auto;
+}
+
+.header {
+    background-image: linear-gradient(135deg, #70eb10 10%, #cb11f2 100%);
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid blue;
+    position: sticky;
+    top: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-family: "Grandstander";
+    color: white;
+}
+
+p {
+    font-weight: bolder;
+    background-image: linear-gradient(to left, red, blue);
+    border-radius: 30px;
+}
+
+.dabba {
+    border: none;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: none;
+    width: 500px;
+    overflow: auto;
+    overflow-x: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 10px;
+    color: blanchedalmond;
+    box-shadow: 2px 3px 10px 5px black;
+    animation: Anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes Anime {from {background-image: linear-gradient(to right,rgb(44, 44, 54),red,yellow);}to{background-image: linear-gradient(to left,rgb(90, 90, 68),rgb(161, 113, 113),blue);}}
+
+h2 {
+    cursor: copy;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box::-webkit-scrollbar-thumb {
+    background-color: rgb(58, 58, 203);
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar {
+    border-radius: 10px;
+}
+
+.box::-webkit-scrollbar-track {
+    background-color: #70eb10;
+    border-radius: 20px;
+}
+
+.box::-webkit-scrollbar-corner {
+    border-radius: 10px;
+}
+@media screen and (max-width: 500px) {.header h1{font-size: 25px;margin-left: 3px;}p{font-size: 15px;margin: 5px;}
+    
+}
+    
+}
